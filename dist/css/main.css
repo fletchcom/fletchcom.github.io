@@ -79,6 +79,10 @@ header {
   }
   
   @media only screen and (max-width: 960px)  {
+
+    header {
+      position: relative;
+    }
   
     #toggleMenu {
       display: block;
@@ -86,9 +90,17 @@ header {
       line-height: 50px;
     }
   
+    header {
+      position: relative;
+    }
+  
     nav {
-        display: none;
-        background: #000;
+      position: absolute;
+      display: none;
+      background: #000;
+      top: 50px;
+      left: 0;
+      right: 0;
     }
   
     nav ul li a,
@@ -97,5 +109,3 @@ header {
       display: block;
       border-bottom: 1px solid #777;
     }
-    
-  }
